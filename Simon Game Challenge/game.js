@@ -45,8 +45,21 @@ function checkAnswer(currentLevel){
         }
     }
     else{
-        console.log("failure");
+        var audio = new Audio("wrong.mp3");
+        audio.play();
+        $("body").addClass("game-over");
+        setTimeout(function () {
+        $("body").removeClass("game-over");
+        }, 200);
+        $("h1").text("Game Over, Press Any Key to Restart");
+        startOver();
     }
+}
+
+function startOver(){
+    count=0;
+    gamePattern=[];
+    started=true;
 }
 
 $(document).keypress(function(){
