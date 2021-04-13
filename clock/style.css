@@ -1,0 +1,39 @@
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: url("https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8aG9yaXpvbnRhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-position: top right;
+    padding: 2rem;
+    margin: 50px auto;
+}
+
+.hand{
+    background:black;
+    width: 15rem;
+    position: absolute;
+    top: 45%;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+
+.hour-hand{
+    width: 10rem;
+    margin-left: 80px;
+    height: 8px;
+    transform: rotate(20deg);
+}
+
+.min-hand{
+    width: 12rem;
+    height: 5px;
+    margin-left: 48px;
+    transform: rotate(45deg);
+}
+
+.sec-hand{
+    height: 2px;
+    transform: rotate(90deg);
+}
+
