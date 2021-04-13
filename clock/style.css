@@ -14,8 +14,6 @@
     position: absolute;
     top: 45%;
     transform-origin: 100%;
-    transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
 }
 
 .hour-hand{
